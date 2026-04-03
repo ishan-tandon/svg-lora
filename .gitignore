@@ -48,13 +48,19 @@ Thumbs.db
 .env.local
 
 # --- Model checkpoints & weights ---
-qwen-svg-lora/
-qwen-svg-lora-v2/
-qwen2b_svg_lora_v3/
-qwen2b_svg_merged/
-
-# --- Training outputs ---
-outputs/
+# Keep folder structure but ignore all files inside
+qwen-svg-lora/**
+!qwen-svg-lora/**/
+qwen-svg-lora/**/.gitkeep
+qwen-svg-lora-v2/**
+!qwen-svg-lora-v2/**/
+qwen-svg-lora-v2/**/.gitkeep
+qwen2b_svg_lora_v3/**
+!qwen2b_svg_lora_v3/**/
+qwen2b_svg_lora_v3/**/.gitkeep
+qwen2b_svg_merged/**
+!qwen2b_svg_merged/**/
+qwen2b_svg_merged/**/.gitkeep
 
 # --- Unsloth compiled cache ---
 unsloth_compiled_cache/
