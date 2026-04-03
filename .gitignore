@@ -1,0 +1,74 @@
+# ============================================
+# .gitignore for nyu_svg_contest
+# ============================================
+
+# --- Python virtual environments ---
+# These contain GBs of CUDA/PyTorch/vLLM libraries
+fresh_env/
+svg-lora/
+unsloth_env/
+
+# --- Python bytecode & caches ---
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Large data files ---
+# train.csv is 129 MB; train_clean.csv is 74 MB
+csv/train.csv
+csv/train_clean.csv
+
+# --- Build / distribution artifacts ---
+build/
+dist/
+*.egg-info/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Zone.Identifier files (Windows/WSL artifacts) ---
+*:Zone.Identifier
+
+# --- Debian packages ---
+*.deb
+
+# --- Compiled binaries / shared libs ---
+*.so
+*.o
+*.dll
+*.exe
+
+# --- Environment variables ---
+.env
+.env.local
+
+# --- Model checkpoints & weights ---
+qwen-svg-lora/
+qwen-svg-lora-v2/
+qwen2b_svg_lora_v3/
+qwen2b_svg_merged/
+
+# --- Training outputs ---
+outputs/
+
+# --- Unsloth compiled cache ---
+unsloth_compiled_cache/
+
+# --- Large model/optimizer files (catch-all) ---
+*.safetensors
+*.pt
+*.bin
+*.onnx
+
+# --- Misc ---
+# Temporary / empty notebooks you flagged for deletion
+delete_this-trial.ipynb
+trial.ipynb
+
+# Script output
+op.txt
